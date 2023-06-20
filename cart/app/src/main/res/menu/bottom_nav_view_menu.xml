@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="首頁"
+        android:icon="@drawable/sl_bar_home"
+
+
+        />
+    <!-- <item
+        android:id="@+id/wishFragment"
+        android:title="我的最愛"
+        android:icon="@drawable/sl_bar_wish"
+        />-->
+
+    <item
+        android:id="@+id/cartFragment"
+        android:title="購物車"
+        android:icon="@drawable/sl_bar_cart"
+        />
+    <item
+        android:id="@+id/userFragment"
+        android:title="會員資料"
+        android:icon="@drawable/sl_bar_user"
+        />
+
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white2">
+
+    <TextView
+        android:id="@+id/checkout_id"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="18dp"
+        android:text="checkout_id"
+        android:paddingStart="20dp"
+        android:gravity="center_vertical"
+        android:background="#FFF6CE"
+        />
+    <TextView
+        android:id="@+id/checkout_product"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/checkout_id"
+        android:textSize="18dp"
+        android:text="checkout_product"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        />
+    <TextView
+        android:id="@+id/checkout_total"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/checkout_product"
+        android:paddingStart="20dp"
+        android:textSize="18dp"
+        android:text="checkout_total"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/checkout_date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/checkout_total"
+        android:paddingStart="20dp"
+        android:textSize="18dp"
+        android:text="checkout_date"
+        android:textColor="#FFB300"
+        android:gravity="center_vertical"
+        />
+
+
+
+</RelativeLayout>

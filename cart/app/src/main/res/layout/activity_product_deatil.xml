@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDeatilActivity"
+    android:background="#F6F6F6">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        tools:context=".ProductDeatilActivity"
+        android:background="#FFFFFF"
+        android:id="@+id/p_title">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="45dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/img_detail"
+        android:text="NAME"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/price_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/name_detail"
+        android:text="$"
+        android:textSize="22dp"
+        android:textColor="#FF5925"
+        />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/content_detail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/p_title"
+        android:text="content"
+        android:textSize="16dp"
+        android:background="@drawable/bg_white3"
+        />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:textSize="22dp"
+        android:layout_below="@+id/content_detail"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/quantity"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_yellow02"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/content_detail"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:text="0"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="22dp"
+        android:layout_below="@+id/content_detail"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_yellow02"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/quantity"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_cart_btn"
+        android:text="加入購物車"
+        android:textColor="@drawable/txt_cart_btn"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/buy_now"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/quantity"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:text="立即結帳"
+        android:textSize="20dp"
+        android:background="@drawable/bg_cart_btn2"
+        android:textColor="@drawable/txt_cart_btn2"
+        app:backgroundTint="@null"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

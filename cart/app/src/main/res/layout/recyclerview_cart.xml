@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white"
+    >
+
+    <ImageView
+        android:id="@+id/cart_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/cart_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/cart_img"
+        android:fontFamily="@font/convergence"
+        android:text="product_title"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/cart_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/cart_img"
+        android:layout_below="@+id/cart_name"
+        android:fontFamily="@font/convergence"
+        android:text="$"
+        android:textSize="20dp"
+        android:textColor="#D16848"
+        />
+
+    <Button
+        android:id="@+id/cart_sub"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/cart_price"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/cart_img"
+        android:background="@drawable/bg_yellow02"
+        android:padding="0dp"
+        android:textColor="#FFFFFF"
+        android:text="-"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cart_quantity"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/cart_price"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/cart_sub"
+        android:background="@drawable/bg_gray"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/cart_add"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/cart_price"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/cart_quantity"
+        android:background="@drawable/bg_yellow02"
+        android:textColor="#FFFFFF"
+        android:padding="0dp"
+        android:text="+"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cart_dele"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/delete_img"
+        android:gravity="center_horizontal"
+        android:padding="0dp"
+        android:backgroundTint="@null"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 當按下bottom navigationg的Home時，會切換圖片-->
+    <item android:state_checked="false"  android:drawable="@drawable/home_outline"/>
+    <item android:state_checked="true" android:drawable="@drawable/home_filled"/>
+</selector>

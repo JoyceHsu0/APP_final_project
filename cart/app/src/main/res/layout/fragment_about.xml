@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutFragment"
+    android:background="@drawable/bg1">
+
+    <ScrollView
+        android:id="@+id/about_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/a1"
+            >
+
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="75dp"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:paddingStart="30dp"
+                android:text="關於我們"
+                android:background="#80FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/about_content"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/about_title"
+                android:textSize="16dp"
+                android:paddingStart="30dp"
+                android:paddingTop="5dp"
+                android:background="#80FFFFFF"
+                android:text="歡迎光臨 Sushi Panda！\n想吃壽司卻不想出門嗎？
+                \n那就趕快下單你喜歡的壽司吧
+                \n滿額就享免運費送到家
+                \nSushi Panda 隨叫隨吃
+                \n\n我們也接受現場外帶喔!
+                \n建議先打電話預約
+                \n連絡電話：04 7232105
+                "
+                />
+<!--
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="400dp"
+            android:layout_height="320dp"
+            android:layout_below="@+id/about_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+         />
+-->
+            <TextView
+                android:id="@+id/about_prj_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:paddingStart="30dp"
+                android:text="關於專題"
+                android:layout_below="@+id/about_content"
+                                />
+
+            <TextView
+                android:id="@+id/about_prj_c1_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_prj_title"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:paddingStart="30dp"
+                android:text="系統功能："
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/about_prj_c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_prj_c1_t"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="1. 首頁：
+                \n      呈現系統Logo，並有「新品上市」以及「你可能會喜歡」兩個推薦欄位，可點選「你可能會喜歡」欄位中的商品跳至該商品詳細畫面。
+                \n\n2. 購物車：
+                \n      使用者將想購買的東西放入購物車，並可前往購物車查看新增的商品，也可以在購物車中更改商品數量。
+                \n\n3. 個人訂單查詢：
+                \n      當送出訂單後，可檢視訂單內容。
+                \n\n4. AI助手：
+                \n      透過server上的php檔和Dialogflow自然語言處理平台進行對話，並以對話框的方式呈現對話。AI助手的功能包含：
+                \n  (1) 推薦商品
+                \n  (2) 推薦新品
+                \n  (3) 介紹商品
+                \n  (4) 加入購物車
+                \n  (5) 查看訂單
+                \n\n5. 關於我們：
+                \n      為Sushi Panda的介紹，以及大致的系統介紹。
+                "/>
+
+            <TextView
+                android:id="@+id/about_prj_c2_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_prj_c1"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:paddingStart="30dp"
+                android:text="圖片來源："
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/about_prj_c2_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_prj_c2_t"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="1. 首頁： (點選兩下以查看來源)"/>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/about_prj_c2_home_is"
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                app:iss_auto_cycle="true"
+                app:iss_placeholder="@color/white"
+                app:iss_error_image="@color/white"
+                app:iss_selected_dot="@drawable/selected_dot"
+                app:iss_unselected_dot="@drawable/unselected_dot"
+                app:iss_period="1000"
+                app:iss_corner_radius="10"
+                tools:ignore="MissingConstraints"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/about_prj_c2_home"/>
+
+            <TextView
+                android:id="@+id/about_prj_c2_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_prj_c2_home_is"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="2. Logo："/>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/about_prj_c2_logo_is"
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                app:iss_auto_cycle="true"
+                app:iss_placeholder="@color/white"
+                app:iss_error_image="@color/white"
+                app:iss_selected_dot="@drawable/selected_dot"
+                app:iss_unselected_dot="@drawable/unselected_dot"
+                app:iss_period="1000"
+                app:iss_corner_radius="10"
+                tools:ignore="MissingConstraints"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="70dp"
+                android:layout_below="@+id/about_prj_c2_logo"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
